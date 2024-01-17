@@ -1,0 +1,10 @@
+INICIAR
+    LER quantidadesDeMacas
+    FAZER numero(quantidadesDeMacas)
+        SE (quantidadesDeMacas<12)
+            ESCREVER valorTotal == (quantidadesDeMacas*1.3)
+        SENÃO
+            ESCREVER valorTotal == (quantidadesDeMacas*1)
+
+FINALIZAR
+            

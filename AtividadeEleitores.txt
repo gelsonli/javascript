@@ -1,0 +1,26 @@
+Atividade 1
+
+INICIAR
+    LER totalEleitores
+    LER votosBrancos
+    LER votosNulos
+    LER votosValidos
+    FAZER numero(totalEleitores)
+    FAZER numero(votosBrancos)
+    FAZER numero(votosNulos)
+    FAZER numero(votosValidos)
+
+    FAZER porcentagemVotosBrancos =((votosBrancos/totalEleitores)*100)
+    ESCREVER "Porcentagem de Votos Brancos: " + porcentagemVotosBrancos
+
+    FAZER porcentagemVotosNulos =((votosNulos/totalEleitores)*100)
+    ESCREVER "Porcentagem de Votos Nulos: " + porcentagemVotosNulos
+
+    FAZER porcentagemVotosValidos =((votosValidos/totalEleitores)*100)
+    ESCREVER "Porcentagem de Votos Validos: " + porcentagemVotosValidos
+    
+        SE totalEleitores == (votosBrancos + votosNulos + votosValidos)
+            ESCREVER "Numero total de eleitores : " + totalEleitores
+        SENÃO 
+            ESCREVER "Eleições anuladas, houve fraude"
+FINALIZAR
